@@ -77,7 +77,7 @@ for x in data:
 			).execute()
 
 		# pprint.pprint(res.items)
-		profile_image = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/40x40/Photo-Missing.png";
+		profile_image = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/Photo-Missing.png";
 		if 'items' in google_res:
 			for items in google_res['items']:
 				if 'cse_image' in items['pagemap']:
