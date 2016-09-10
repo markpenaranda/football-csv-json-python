@@ -66,11 +66,11 @@ for x in data:
 
 		player = resp_pl.json()
 		
-		if 'lastname' in player:
+		if 'lastname' in player and 'firstname' in player:
 			search_query = player['lastname'] + " " + x['team_name']
-		else
+		else:
 			continue
-		
+
 		google_res = service.cse().list(
 		      q=search_query,
 		      cx='004600183681775061592:ndwbflrtpzw',
