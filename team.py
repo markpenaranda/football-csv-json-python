@@ -82,7 +82,7 @@ for x in data:
 			for items in google_res['items']:
 				if 'cse_image' in items['pagemap']:
 					image = items['pagemap']['cse_image'][0]['src']
-					if 'GettyImage' not in image and '.png' in image and 'badges' in image:
+					if 'GettyImage' not in image and '.png' in image and 'badges' not in image:
 						profile_image = image
 						break
 					
