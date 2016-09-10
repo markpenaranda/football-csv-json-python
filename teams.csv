@@ -1,7 +1,21 @@
 id,created_by,created_at,name,nickname,league_id,image_url
-9259,system,2016-09-01 00:00:00+08,Manchester City,Manchester City,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t43.png
-9092,system,2016-09-01 00:00:00+08,Chelsea,Chelsea,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t8.png
-9260,system,2016-09-01 00:00:00+08,Manchester United,Manchester United,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t1.png
-9406,system,2016-09-01 00:00:00+08,Tottenham,Tottenham,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t6.png
-9002,system,2016-09-01 00:00:00+08,Arsenal,Arsenal,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t3.png
-9221,system,2016-09-01 00:00:00+08,Hull City,Hull City,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t88.png
+9259,system,2016-09-01 00:00:00+08,Manchester City,MCI,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t43.png
+9092,system,2016-09-01 00:00:00+08,Chelsea,CHE,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t8.png
+9260,system,2016-09-01 00:00:00+08,Manchester United,MUN,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t1.png
+9406,system,2016-09-01 00:00:00+08,Tottenham,TOT,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t6.png
+9002,system,2016-09-01 00:00:00+08,Arsenal,ARS,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t3.png
+9221,system,2016-09-01 00:00:00+08,Hull City,HUL,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t88.png
+9158,system,2016-09-01 00:00:00+08,Everton,EVE,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t11.png
+9274,system,2016-09-01 00:00:00+08,Middlesbrough,MID,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t25.png
+9240,system,2016-09-01 00:00:00+08,Leicester,LEI,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t13.png
+9423,system,2016-09-01 00:00:00+08,Watford,WAT,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t57.png
+9249,system,2016-09-01 00:00:00+08,Liverpool,LIV,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t14.png
+9127,system,2016-09-01 00:00:00+08,Crystal Palace,CRY,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t31.png
+9426,system,2016-09-01 00:00:00+08,West Brom,WBA,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t35.png
+9072,system,2016-09-01 00:00:00+08,Burnley,BUR,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t90.png
+9053,system,2016-09-01 00:00:00+08,Bournemouth,Bournemouth,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t91.png
+9387,system,2016-09-01 00:00:00+08,Swansea,SWA,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t80.png
+9427,system,2016-09-01 00:00:00+08,West Ham,WHU,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t21.png
+9363,system,2016-09-01 00:00:00+08,Southampton,SOU,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t20.png
+9384,system,2016-09-01 00:00:00+08,Sunderland,SUN,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t56.png
+9378,system,2016-09-01 00:00:00+08,Stoke City,STK,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t110.png
