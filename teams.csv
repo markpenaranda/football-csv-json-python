@@ -1,0 +1,7 @@
+id,created_by,created_at,name,nickname,league_id,image_url
+9259,system,2016-09-01 00:00:00+08,Manchester City,Manchester City,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t43.png
+9092,system,2016-09-01 00:00:00+08,Chelsea,Chelsea,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t8.png
+9260,system,2016-09-01 00:00:00+08,Manchester United,Manchester United,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t1.png
+9406,system,2016-09-01 00:00:00+08,Tottenham,Tottenham,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t6.png
+9002,system,2016-09-01 00:00:00+08,Arsenal,Arsenal,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t3.png
+9221,system,2016-09-01 00:00:00+08,Hull City,Hull City,1,https://platform-static-files.s3.amazonaws.com/premierleague/badges/t88.png
