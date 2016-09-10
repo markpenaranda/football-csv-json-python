@@ -66,10 +66,11 @@ for x in data:
 
 		player = resp_pl.json()
 		
-
-
-		search_query = player['lastname'] + " " + x['team_name']
-
+		if 'lastname' in player:
+			search_query = player['lastname'] + " " + x['team_name']
+		else
+			continue
+		
 		google_res = service.cse().list(
 		      q=search_query,
 		      cx='004600183681775061592:ndwbflrtpzw',
@@ -81,7 +82,7 @@ for x in data:
 			for items in google_res['items']:
 				if 'cse_image' in items['pagemap']:
 					image = items['pagemap']['cse_image'][0]['src']
-					if 'GettyImage' not in image and '.png' in image:
+					if 'GettyImage' not in image and '.png' in image and 'badges' in image:
 						profile_image = image
 						break
 					
