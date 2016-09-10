@@ -83,10 +83,10 @@ for x in data:
 				if 'cse_image' in items['pagemap']:
 					image = items['pagemap']['cse_image'][0]['src']
 					if 'GettyImage' not in image and '.png' in image and 'badges' not in image:
-						if '110x140' in images:
+						if '110x140' in image:
 							profile_image = image
 							break
-						elif '250x250' in images:
+						elif '250x250' in image:
 							profile_image = image
 							break
 							
