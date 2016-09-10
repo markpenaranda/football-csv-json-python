@@ -3,6 +3,8 @@ import csv
 import urllib2
 import requests
 import pprint
+from progress.bar import Bar
+
 
 from googleapiclient.discovery import build
 
@@ -21,8 +23,12 @@ p = csv.writer(open("players.csv", "wb+"))
 p.writerow(["id","created_by","created_at","first_name","last_name","team_id", "image_url"])
 f.writerow(["id","created_by","created_at","name","nickname","league_id", "image_url"])
 
+team_count = 0
 for x in data:
 	##print x['team_id']
+	team_count = team_count + 1
+	print  str(team_count) +"/"+ str(len(data));
+
 
 	google_res = service.cse().list(
 	      q=x['team_name'] + " badge",
@@ -44,16 +50,18 @@ for x in data:
 
 	team = resp.json()
 
+	counter = 0
+	bar = Bar('Processing', max=len(team['squad']))
 	for pl in team['squad']:
-
+		bar.next()
 		jersey_number = pl['number']
-		print pl['id']
+
 		resp_pl = requests.get("http://api.football-api.com/2.0/player/" + pl['id'] + "?Authorization=565ec012251f932ea4000001393b4115a8bf4bf551672b0543e35683");
 
 
 		player = resp_pl.json()
 		
-		print(player)
+
 
 		search_query = player['lastname'] + " " + x['team_name']
 
@@ -72,4 +80,5 @@ for x in data:
 				# print que
 
 		p.writerow([player['id'], "system", "2016-09-01 00:00:00+08", player['firstname'].encode("utf-8"), player['lastname'].encode("utf-8"), x['team_id'], profile_image])
-
+	bar.finish()
+		

@@ -1,2 +1,2 @@
-id,created_by,created_at,name,nickname,league_id
-9259,system,2016-09-01 00:00:00+08,Manchester City,Manchester City,1
+id,created_by,created_at,name,nickname,league_id,image_url
+9259,system,2016-09-01 00:00:00+08,Manchester City,Manchester City,1,https://premierleague-static-files.s3.amazonaws.com/premierleague/photo/2016/08/22/85c6d56a-e2c8-431b-bf10-e7de631695c6/2016-08-13T164009Z_114108009_MT1ACI14539923_RTRMADP_3_SOCCER-ENGLAND-MCI-SUN.JPG
