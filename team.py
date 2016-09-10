@@ -18,7 +18,7 @@ response = requests.get("http://api.football-api.com/2.0/standings/1204?Authoriz
 data = response.json()
 
 
-f = csv.writer(open("test.csv", "wb+"))
+f = csv.writer(open("teams.csv", "wb+"))
 p = csv.writer(open("players.csv", "wb+"))
 p.writerow(["id","created_by","created_at","first_name","last_name","team_id", "image_url"])
 f.writerow(["id","created_by","created_at","name","nickname","league_id", "image_url"])
@@ -38,10 +38,15 @@ for x in data:
 	# pprint.pprint(res.items)
 	team_image = "";
 
-	for items in google_res['items']:
-		if 'cse_image' in items['pagemap']:
-			team_image = items['pagemap']['cse_image'][0]['src']
-			break
+	if 'items' in google_res:
+		for items in google_res['items']:
+			if 'cse_image' in items['pagemap']:
+				t_image = items['pagemap']['cse_image'][0]['src']
+				if 'GettyImage' not in t_image and '.png' in t_image:
+					team_image = t_image
+					break
+						
+				
 			# print que
 
 	f.writerow([x['team_id'],"system", "2016-09-01 00:00:00+08", x['team_name'], x['team_name'],1, team_image])
@@ -71,14 +76,17 @@ for x in data:
 			).execute()
 
 		# pprint.pprint(res.items)
-		profile_image = "";
+		profile_image = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/40x40/Photo-Missing.png";
+		if 'items' in google_res:
+			for items in google_res['items']:
+				if 'cse_image' in items['pagemap']:
+					image = items['pagemap']['cse_image'][0]['src']
+					if 'GettyImage' not in image and '.png' in image:
+						profile_image = image
+						break
+					
+					# print que
 
-		for items in google_res['items']:
-			if 'cse_image' in items['pagemap']:
-				profile_image = items['pagemap']['cse_image'][0]['src']
-				break
-				# print que
-
-		p.writerow([player['id'], "system", "2016-09-01 00:00:00+08", player['firstname'].encode("utf-8"), player['lastname'].encode("utf-8"), x['team_id'], profile_image])
+			p.writerow([player['id'], "system", "2016-09-01 00:00:00+08", player['firstname'].encode("utf-8"), player['lastname'].encode("utf-8"), x['team_id'], profile_image])
 	bar.finish()
 		
